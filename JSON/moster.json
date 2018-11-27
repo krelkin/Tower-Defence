@@ -1,0 +1,26 @@
+/*{type_enemy:
+{"speed": 0 px per sec,
+"health": 0,
+"death_price": 0,
+"path_point": 0,
+"image": ""}}*/
+
+enemy_params = 
+{
+	"1":{"speed": 57,
+		"health": 30,
+		"death_price": 3,
+		"image": {"move_up": ["./images/enemies/enemy1.png", "./images/enemies/enemy2.png", "./images/enemies/enemy8.png", "./images/enemies/enemy4.png"],
+				  "move_down": ["./images/enemies/enemy1.png"],
+				  "move_left": ["./images/enemies/enemy1.png"],
+				  "move_right": ["./images/enemies/enemy1.png"]
+				  }
+				  
+		},
+
+	"2":{"speed": 100,
+		"health": 10,
+		"death_price": 1,
+		"image": "./images/enemies/enemy2.png"}
+
+}

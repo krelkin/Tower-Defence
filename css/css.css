@@ -1,0 +1,45 @@
+
+.tower_1 {
+	
+	width: 190px;
+	height: 190px;
+	background: red;
+	-moz-border-radius: 90px;
+	-webkit-border-radius: 90px;
+	border-radius: 150px;
+}
+
+.trash{
+	width: 15px;
+	height: 15px;
+}
+
+.parameters{
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: black;
+	background-color: orange;
+}
+
+.parameters div{
+	display: inline-block;
+}
+
+.new_tower{
+	opacity: 0.7;
+}
+
+.button_speed{
+	width: 30px;
+}
+
+.tower_params{
+	font-size: 9px;
+	font-weight: normal;
+}
+
+#towers_enemies .tower img{
+	height: 75px
+}
+

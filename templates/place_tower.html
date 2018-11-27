@@ -1,0 +1,67 @@
+<body id = "body">
+	<img src = "../images/maps/map1.jpg" id = "field">
+	<script>
+		
+		function Tower(left_tower, top_tower, tower_onmousemove){
+			this.div = '<div id = "place_tower" class = "tower new_tower" style = "position:fixed;z-index:50;top:' + top_tower + 'px;left:' + left_tower + 'px" onclick = "game.clearPlaceTower()">' 
+							+ '<img src = "../images/tower.png">'
+							+ '<div id = "live">†θηνό!</div>'
+						+ '</div>';
+						
+			this.current_position = {"left": left_tower, "top": top_tower}
+			
+			this.toString = function(){
+				return "left: " + this.current_position["left"] + "; top: " + this.current_position["top"];
+			}
+		}
+		
+		function Game(){
+			this.place_tower = undefined;
+			selfGame = this;
+			
+			this.placeNewTower = function(button){
+				body = document.getElementById("body");
+				this.place_tower = new Tower(button.offsetLeft, button.offsetTop, this.onmousemove);
+				body.innerHTML += this.place_tower.div;
+				
+				document.getElementById("place_tower").onmousemove = this.onmousemove;
+				document.getElementById("field").onmousemove = game.onmousemove;
+			}
+			
+			this.onmousemove = function(event){
+				if(event == undefined) return;
+				if(selfGame.place_tower == undefined) return;
+				
+				selfGame.place_tower.current_position["left"] = event.clientX;
+				selfGame.place_tower.current_position["top"] = event.clientY;
+				top_tower = event.clientY - document.getElementById("place_tower").offsetHeight / 2 + "px";
+				left_tower = event.clientX - document.getElementById("place_tower").offsetWidth / 2 + "px";
+				document.getElementById("place_tower").style.top = top_tower;
+				document.getElementById("place_tower").style.left = left_tower;
+			};
+			
+			this.clearPlaceTower = function(){
+				this.place_tower = undefined;
+				document.getElementById("place_tower").remove();
+			}
+			
+		}
+		//document.getElementsByTagName("body")[0].addEventListener("mouseover", changeCoordinate);
+	</script>
+	<input type = "button" onclick = "game.placeNewTower(this)">
+	<script>
+		
+		game = new Game();
+		//document.getElementById("field").onmousemove = game.onmousemove;
+		
+		
+		//setInterval(onhover, 100);
+		/*
+		document.getElementsByTagName("body")[0].onmouseover = function(event){
+			document.getElementById("place_tower").style.top = event.clientY + "px";
+			document.getElementById("place_tower").style.left = event.clientX + "px";
+			//$("#place_tower").css("left", event.clientX);
+		}*/
+	</script>
+	
+</body>

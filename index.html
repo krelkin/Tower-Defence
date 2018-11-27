@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Tower, блять, Defence</title>
+<link href="css/css.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+<!--
+Open file:
+var json;
+$.get("templates/user_interface.html", function(data){json = data;});
+$("#user_interface").append($(json.documentElement));
+-->
+<body>
+	<!--<div id = "field" class = ""></div>-->
+	<div id = "menu" class = "menu"></div>
+	<div id = "field"></div>
+	<div id = "user_interface" class = "user_interface"></div>
+	<div id="game_interface"></div>
+	
+	<script src="JSON/game_towers.json"></script>
+	<script src="JSON/user_interface.json"></script>
+	<script src="JSON/enemy.json"></script>
+	<script src="JSON/enemy_params.json"></script>
+	<script src="JSON/tower_params.json"></script>
+	<script src="JSON/trash_params.json"></script>
+	<script src="JSON/path_map.json"></script>
+	<script type="text/javascript" src="js/MoveClass.js"></script>
+	<script type="text/javascript" src="js/DisplayClass.js"></script>
+	<script type="text/javascript" src="js/FieldClass.js"></script>
+	<script type="text/javascript" src="js/TrashClass.js"></script>
+	<script type="text/javascript" src="js/TowerClass.js"></script>
+	<script type="text/javascript" src="js/EnemyClass.js"></script>
+	<script type="text/javascript" src="js/GameClass.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+</body>
+</html>

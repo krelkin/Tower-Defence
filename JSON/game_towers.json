@@ -1,0 +1,17 @@
+﻿game_towers = {
+	"minigun": {
+		"Цена": "price", 
+		"Урон": "damage", 
+		"Скорость": "speedattack",
+		"Радиус": "radius"
+	}/*,
+
+	"artillery": {
+		"Цена": "price", 
+		"Урон": "damage", 
+		"Скорость": "speedattack",
+		"Радиус": "radius"
+	}*/
+	
+};
+

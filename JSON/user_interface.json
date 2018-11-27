@@ -1,0 +1,31 @@
+﻿/*
+id_interface: string(html_code)
+*/
+
+user_interface = {
+	"game": "<div style='width: 1024px'>" +
+		"<div id = 'game_parameters' class = 'col-xs-2 parameters'>" +
+			"Gold: <div id = 'gold'></div><br />" +
+			"HP: <div id = 'helthpoint'></div><br />" +
+			"<div title='INFO'>Wave: <div id = 'wave_number'></div> (<div id = 'left_enemy'></div>/<div id = 'all_enemy'></div>)</div><br />" +
+			"Timer to next wave: <div id = 'time_to_next_wave'></div><br />" +
+			"<input type='button' id='next_wave_button' value='Next wave' class='col-xs-12' onclick = '%GAME%.nextWave()'><br />" +
+			"<div id='start_stop'><img src = 'images/interface/game/start_stop.jpg' class = 'button_speed'  onclick = '%GAME%.pause()'></div>" +
+			"<div id='speed_1'><img src = 'images/interface/game/speed_1.jpg' class = 'button_speed' onclick = '%GAME%.speedChange(1)'></div>" +
+			"<div id='speed_2'><img src = 'images/interface/game/speed_2.jpg' class = 'button_speed' onclick = '%GAME%.speedChange(2)'></div>" +
+			"<div id='speed_3'><img src = 'images/interface/game/speed_3.jpg' class = 'button_speed' onclick = '%GAME%.speedChange(3)'></div>" +
+		"</div>" + 
+	"</div>" +
+	"<div id = 'towers_enemies' class = 'col-xs-9 towers'>" +
+		"%TOWERS_ENEMIES%" +
+	"</div>",
+	
+	"tower": "<div id = '%TYPE%' class = 'col-xs-2 tower' onclick = \"%GAME%.placeNewTower(this, 'create')\">" + 
+		"<img src = '%IMAGE%'>" +
+		"<div class = 'parameters tower_params'>" +
+			"%TOWER_PARAMS%" +
+		"</div>" +
+	"</div>",
+	
+	"param": "<div>%PARAM%: %VALUE%</div><br />"
+}

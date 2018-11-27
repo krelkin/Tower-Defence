@@ -1,0 +1,16 @@
+/*
+	"type_trash": {"param1": "val1", "param2": "val2"}
+	type_trash должен совпадать с type_tower (tower_params.json)
+*/
+
+trash_params = {
+	"minigun": {
+		"image": 	["./images/bullet.jpg"], //в зависимости от развития башни снаряды будут менять картинки по индексу массива
+		"speed":	500
+	},
+	
+	"artillery": {
+		"image": 	["./images/bullet_art.jpg"], //в зависимости от развития башни снаряды будут менять картинки по индексу массива
+		"speed":	200
+	}
+}

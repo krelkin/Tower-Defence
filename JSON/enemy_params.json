@@ -1,0 +1,69 @@
+/*{type_enemy:
+{"speed": 0 px per sec,
+"health": 0,
+"death_price": 0,
+"path_point": 0,
+"image": ""}}*/
+
+enemy_params = 
+{
+	"green_gnome":{ //название является самим каталогом с монстром в папке с врагами .images/enemies/green_gnome/картинки.
+					//каринки в каталоге должны называться: кудаИдётМоб_действие_количествоСЛидирующимНулем.
+					//к примеру: r_walk_01
+		"speed": 100,									//скорость врага
+		"health": 10,									//здоровье врага
+		"death_price": 2,								//количество монет за убийство
+		"images": ["./images/enemies/enemy1.png"],		//старый параметр
+		"catalog_images": "./images/enemies/",			//каталог монстров (скорее всего перейдёт в глобальные настройки)
+		"animation": {									//какая анимация в каком количестве
+			"walk": {"l":{	"images": ["l_walk_00.bmp", "l_walk_01.bmp", "l_walk_02.bmp", "l_walk_03.bmp", "l_walk_04.bmp", "l_walk_05.bmp", "l_walk_06.bmp", "l_walk_07.bmp", "l_walk_08.bmp"],
+							"animation_delay": 100,							//через какое количество милисекунд должен появиться следующий кадр
+							"frame_width": 96, 
+							"frame_height": 96
+						 },
+					 "r":{	"images": ["r_walk_00.bmp", "r_walk_01.bmp", "r_walk_02.bmp", "r_walk_03.bmp", "r_walk_04.bmp", "r_walk_05.bmp", "r_walk_06.bmp", "r_walk_07.bmp", "r_walk_08.bmp"],
+							"animation_delay": 100,							//через какое количество милисекунд должен появиться следующий кадр
+							"frame_width": 96, 
+							"frame_height": 96
+						 },
+					 "t":{	"images": ["t_walk_00.bmp", "t_walk_01.bmp", "t_walk_02.bmp", "t_walk_03.bmp", "t_walk_04.bmp", "t_walk_05.bmp", "t_walk_06.bmp", "t_walk_07.bmp", "t_walk_08.bmp"],
+							"animation_delay": 100,							//через какое количество милисекунд должен появиться следующий кадр
+							"frame_width": 96, 
+							"frame_height": 96
+						 },
+					 "d":{	"images": ["d_walk_00.bmp", "d_walk_01.bmp", "d_walk_02.bmp", "d_walk_03.bmp", "d_walk_04.bmp", "d_walk_05.bmp", "d_walk_06.bmp", "d_walk_07.bmp", "d_walk_08.bmp"],
+							"animation_delay": 100,							//через какое количество милисекунд должен появиться следующий кадр
+							"frame_width": 96, 
+							"frame_height": 96
+						 }
+					},
+			"death":{"l":{	"images": ["l_death_00.bmp", "l_death_01.bmp", "l_death_02.bmp", "l_death_03.bmp", "l_death_04.bmp", "l_death_05.bmp", "l_death_06.bmp", "l_death_07.bmp", "l_death_08.bmp"],
+							"animation_delay": 100,							//через какое количество милисекунд должен появиться следующий кадр
+							"frame_width": 96,
+							"frame_height": 96
+						 },
+					 "r":{	"images": ["r_death_00.bmp", "r_death_01.bmp", "r_death_02.bmp", "r_death_03.bmp", "r_death_04.bmp", "r_death_05.bmp", "r_death_06.bmp", "r_death_07.bmp", "r_death_08.bmp"],
+							"animation_delay": 100,							//через какое количество милисекунд должен появиться следующий кадр
+							"frame_width": 96,
+							"frame_height": 96
+						 },
+					 "t":{	"images": ["t_death_00.bmp", "t_death_01.bmp", "t_death_02.bmp", "t_death_03.bmp", "t_death_04.bmp", "t_death_05.bmp", "t_death_06.bmp", "t_death_07.bmp", "t_death_08.bmp"],
+							"animation_delay": 100,							//через какое количество милисекунд должен появиться следующий кадр
+							"frame_width": 96,
+							"frame_height": 96
+						 },
+					 "d":{	"images": ["d_death_00.bmp", "d_death_01.bmp", "d_death_02.bmp", "d_death_03.bmp", "d_death_04.bmp", "d_death_05.bmp", "d_death_06.bmp", "d_death_07.bmp", "d_death_08.bmp"],
+							"animation_delay": 100,							//через какое количество милисекунд должен появиться следующий кадр
+							"frame_width": 96,
+							"frame_height": 96
+						 }
+					}
+		}
+	},
+	"2":{"speed": 57,
+		"health": 15,
+		"death_price": 4,
+		"animation_delay": 30,
+		"images": ["./images/enemies/enemy2.png"]}
+
+}
